@@ -44,3 +44,10 @@ nav a {
     color: white;
     text-decoration: none;
 }
+
+article {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
