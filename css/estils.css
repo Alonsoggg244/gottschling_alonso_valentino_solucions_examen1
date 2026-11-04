@@ -64,3 +64,8 @@ article {
     text-transform: uppercase;
     border-radius: 6px;
 }
+
+article img {
+    width: 100%;
+    /* tan ampla com el contingut de l'article */
+}
