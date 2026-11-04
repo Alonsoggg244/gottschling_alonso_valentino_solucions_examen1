@@ -58,4 +58,9 @@ article {
     /* el fill */
     bottom: 15px;
     left: 15px;
+    padding: 4px 10px;
+    background-color: #2e7d32;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 6px;
 }
