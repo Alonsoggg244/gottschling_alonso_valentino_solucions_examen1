@@ -50,4 +50,12 @@ article {
     padding: 20px;
     border: 1px solid black;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.nou {
+    position: absolute;
+    /* el fill */
+    bottom: 15px;
+    left: 15px;
 }
