@@ -39,3 +39,8 @@ h2 {
 }
 
 /* 24px */
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
