@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.galeria figure {
+    margin: 0;
+    margin-bottom: 16px;
+    background-color: white;
+    border: thin solid;
+}
+
+.galeria img {
+    width: 100%;
+    display: block; /* G1 */
+}
+
+.galeria figcaption {
+    padding: 8px;
+}
+
+.banner {
+    display: none;
+}
+
+.km {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .galeria figure {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
+}
+
+@media (min-width: 768px) {
+    .km {
+        display: inline;
+    }
+
+    .banner {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .galeria figure {
+        width: 32%;
+    }
+}
