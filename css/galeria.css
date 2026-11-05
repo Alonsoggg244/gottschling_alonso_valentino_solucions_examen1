@@ -14,11 +14,12 @@ html {
     margin-bottom: 16px;
     background-color: white;
     border: thin solid;
+    border-color: rgb(179, 179, 167);
 }
 
 .galeria img {
     width: 100%;
-    display: block; /* G1 */
+    display: block;
 }
 
 .galeria figcaption {
