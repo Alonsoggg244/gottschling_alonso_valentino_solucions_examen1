@@ -9,6 +9,12 @@ html {
     box-sizing: inherit;
 }
 
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
 .galeria figure {
     margin: 0;
     margin-bottom: 16px;
@@ -34,11 +40,15 @@ html {
     display: none;
 }
 
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+}
+
 @media (min-width: 576px) {
-    .galeria figure {
-        display: inline-block;
-        width: 48%;
-        vertical-align: top;
+    figure {
+        width: calc((100%-16px) / 2);
     }
 }
 
@@ -49,11 +59,14 @@ html {
 
     .banner {
         display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 @media (min-width: 992px) {
-    .galeria figure {
-        width: 32%;
+    figure {
+        width: calc((100% - 32px) / 3);
     }
 }
