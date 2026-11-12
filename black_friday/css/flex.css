@@ -1,3 +1,4 @@
+/* Els dos trucs */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -21,9 +22,6 @@ header {
     padding: 12px 16px;
     background-color: #111;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 header p {
@@ -50,25 +48,20 @@ h1 {
     font-size: 2.4rem;
 }
 
-.productes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 .producte {
     margin-bottom: 20px;
     padding: 12px;
     background-color: white;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
 .producte img {
     display: block;
     width: 100%;
+}
+
+.productes {
+    display: flex;
 }
 
 .producte h2 {
@@ -78,9 +71,6 @@ h1 {
 
 .preus {
     margin: 0 0 12px;
-    display: flex;
-    gap: 8px;
-    align-items: baseline;
 }
 
 .preus del {
@@ -98,7 +88,6 @@ h1 {
     color: white;
     font-size: 1.3rem;
     font-weight: bold;
-    margin-left: auto;
 }
 
 .boto {
@@ -109,9 +98,9 @@ h1 {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    margin-top: auto;
 }
 
+/* A partir de 576 px: 2 per fila (1 forat) */
 @media (min-width: 576px) {
     .producte {
         width: calc((100% - 20px) / 2);
