@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --fosc: #1f2a36;
+    --blau: #2b4c7e;
+    --groc: #f4d35e;
+    --fons: #eef1f5;
+    --taronja: #dd8639;
+    --blau-clar: #c7e8f3;
+    --verd: #9bc53d;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fons);
+    color: var(--fosc);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 8px;
+}
+
+.logo,
+.menu,
+.titol,
+.servei,
+.crida,
+.peu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    background-color: var(--blau);
+    color: white;
+}
+
+.menu {
+    background-color: var(--blau);
+    color: white;
+}
+
+.titol {
+    background-color: var(--verd);
+    color: white;
+}
+
+.servei {
+    background-color: var(--blau-clar);
+}
+
+.crida {
+    background-color: var(--taronja);
+    color: white;
+}
+
+.peu {
+    background-color: var(--fosc);
+    color: white;
+}
+
+.pagina>* {
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.pagina {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.titol {
+    grid-area: titol;
+}
+
+.s1 {
+    grid-area: s1;
+}
+
+.s2 {
+    grid-area: s2;
+}
+
+.s3 {
+    grid-area: s3;
+}
+
+.crida {
+    grid-area: crida;
+    color: black;
+}
+
+.peu {
+    grid-area: peu;
+}
+
+.pagina {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo menu"
+        "titol titol"
+        "s1 s1"
+        "s2 s2"
+        "s3 s3"
+        "crida crida"
+        "peu peu";
+}
+
+@media (min-width: 768px) {
+    .pagina {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo . menu"
+            "titol titol titol"
+            "s1 s2 s3"
+            "crida crida crida"
+            "peu peu peu";
+    }
+}

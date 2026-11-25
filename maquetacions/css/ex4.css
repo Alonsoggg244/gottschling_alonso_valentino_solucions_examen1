@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --fosc: #1f2a36;
+    --blau: #2b4c7e;
+    --groc: #f4d35e;
+    --fons: #eef1f5;
+    --taronja: #ee964b;
+    --blau-clar: #c7e8f3;
+    --verd: #9bc53d;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fons);
+    color: var(--fosc);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0 0 8px;
+}
+
+.pagina>* {
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.pagina {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.capcalera {
+    background-color: var(--blau);
+    color: white;
+}
+
+.noticies {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0;
+}
+
+.destacada {
+    background-color: var(--taronja);
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.noticia {
+    background-color: var(--blau-clar);
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.peu {
+    background-color: var(--fosc);
+    color: white;
+}
+
+@media (min-width: 576px) {
+    .noticies {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destacada {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .noticies {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .destacada {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}
